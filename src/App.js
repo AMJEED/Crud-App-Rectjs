@@ -7,7 +7,7 @@ import AllUsers from './components/AllUsers';
 import NotFound from './components/NotFound';
 import {BrowserRouter,Route,Routes } from 'react-router-dom';
 import React, { PropTypes } from 'react'
-
+import 'antd/dist/antd.css'
 function App() {
   return (
     <div>
