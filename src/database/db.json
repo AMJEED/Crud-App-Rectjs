@@ -1,0 +1,18 @@
+{
+
+   "users":
+    {
+        "house_id" : 1,
+        "house_city":"xyz_city",
+        "house_street":"xyz_street",
+        "house_area":823728,
+        "house_rooms":2,
+        "house_kitchens":3,
+        "house_price":81921
+
+
+
+
+    }
+
+}

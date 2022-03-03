@@ -15,10 +15,10 @@ function App() {
       <BrowserRouter>
       <NavBar/>
        <Routes>
-        <Route exact path="/" element={<CodeForInterview/>}></Route>
+        <Route  path="/" element={<CodeForInterview/>}></Route>
        
-        <Route exact path = "/all" element={<AllUsers/>}/> 
-        <Route exact path = "/add" element={<AddUser/>}/> 
+        <Route  path = "/all" element={<AllUsers/>}/> 
+        <Route  path = "/add" element={<AddUser/>}/> 
         <Route path = "*"element={<NotFound/>}/>
 
        

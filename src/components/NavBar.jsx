@@ -27,9 +27,9 @@ return(
     
         <AppBar className={classes.header} position ='static'>
                 <Toolbar>
-                    <NavLink className={classes.tabs} to="./" exact>Code for interview</NavLink >
-                    <NavLink className={classes.tabs} to="all" exact>All Users</NavLink >
-                    <NavLink className={classes.tabs}to = "add" exact>Add Users</NavLink >
+                    <NavLink className={classes.tabs} to="./" >Code for interview</NavLink >
+                    <NavLink className={classes.tabs} to="all" >All Users</NavLink >
+                    <NavLink className={classes.tabs}to = "add">Add Users</NavLink >
                 </Toolbar>
 
 
