@@ -1,6 +1,6 @@
 import { React, PropTypes } from 'react'
 import land from"../material/pictures/land2.jpg"
-const CodeForInterview=()=>{
+const Home=()=>{
   return(
        <>
 
@@ -11,4 +11,4 @@ const CodeForInterview=()=>{
 
 
 }
-export default CodeForInterview;
+export default Home;

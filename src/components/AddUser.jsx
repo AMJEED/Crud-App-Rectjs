@@ -20,7 +20,7 @@ const addRecord =(e)=>{
       let data ={h_num:hs_num,h_city:hs_city,h_street:hs_street,h_area:hs_area,h_rooms:hs_rooms,h_kitchens:hs_kitchens,h_status:hs_status,h_price:hs_price}
       alert('A form was submitted: '+data.h_area);
 
-      fetch('http://localhost:8001/api/create', {
+      fetch('http://localhost:3001/api/create', {
           method: 'POST',
           headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
           // We convert the React state to JSON and send it as the POST body
@@ -34,6 +34,7 @@ const addRecord =(e)=>{
         e.preventDefault();
   }
   
+
 
 
 
@@ -106,7 +107,7 @@ const classes = useStyle();
       </Form.Item>
 
       <Form.Item
-        label="House Total Area"
+        label="House Total Area square foot (sq ft)"
         name="House Total Area"
         rules={[
           {
@@ -181,7 +182,7 @@ const classes = useStyle();
           span: 16,
         }}
       >
-        <Button onClick={addRecord}type="primary" htmlType="submit"  >
+        <Button onClick={()=>{addRecord()}}type="primary" htmlType="submit"  >
           Add Reacord
         </Button>
       </Form.Item>

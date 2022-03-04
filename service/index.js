@@ -62,15 +62,29 @@ app.post("/api/create",(req, res) => {
       });
 
 // to show all records
-      app.get("/api/view", (req, res) => {
-        let sql = "SELECT * FROM house";
-        let query = db.query(sql, (err, result) => {
-          if (err) throw err;
-          res.send(JSON.stringify({ status: 200, error: null, response: result }));
-        });
-      });
+app.get("/api/view", (req, res) => {
+  db.query("SELECT * FROM house", (err, result) => {
+    if (err) {
+      console.log(err);
+    } else {
+      res.send(result);
+    }
+  });
+});
 
 
-app.listen('8002', () => {
+app.delete("/api/delete/:id", (req, res) => {
+  const id = req.params.id;
+  db.query("DELETE FROM house WHERE id = ?", id, (err, result) => {
+    if (err) {
+      console.log(err);
+    } else {
+      res.send(result);
+    }
+  });
+});
+
+
+app.listen('3001', () => {
   console.log("Yey, your server is running on port 3002");
 });
