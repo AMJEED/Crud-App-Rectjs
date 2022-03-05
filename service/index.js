@@ -85,6 +85,7 @@ app.delete("/api/delete/:id", (req, res) => {
 });
 
 
-app.listen('3001', () => {
+app.listen('3002', () => {
   console.log("Yey, your server is running on port 3002");
 });
+

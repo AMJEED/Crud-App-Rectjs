@@ -12,7 +12,7 @@ const AllUsers =()=>{
 
       const [list, setList] = useState([]);
       const getEmployees = () => {
-            Axios.get("http://localhost:3001/api/view").then((response) => {
+            Axios.get("http://localhost:3002/api/view").then((response) => {
               setList(response.data);
             });
           };
@@ -25,10 +25,10 @@ const AllUsers =()=>{
 
 
           const deleteRecord = (id) => {
-            Axios.delete(`http://localhost:3001/api/delete/${id}`).then((response) => {
+            Axios.delete(`http://localhost:3002/api/delete/${id}`).then((response) => {
               setList(
                 list.filter((val) => {
-                  return val.id != id;
+                  return val.id !== id;
                 })
               );
             });
